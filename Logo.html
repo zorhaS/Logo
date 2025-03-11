@@ -4,20 +4,22 @@
     <style>
 .image-container {
     overflow: hidden;
-    display: inline-block; /* Permet de s'adapter à la taille de l'image */
+    display: inline-block;
     border-radius: 10px;
 }
 
 .image-container img {
     width: 100%;
-    height: auto; /* Garde le ratio d'origine */
+    height: auto;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
+    transform-origin: center center; /* Centrer la transformation */
 }
 
 .image-container:hover img {
     transform: scale(1.2);
 }
+
 
     </style>
 </head>
